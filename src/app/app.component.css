@@ -1,0 +1,174 @@
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+  color: #8E8172;
+}
+
+body {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 14pt;
+  padding-top: 20px;
+}
+
+body::after {
+  content: "";
+  opacity: .2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+div.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 0;
+}
+
+span {
+  font-size: 22px;
+}
+
+input[type="text"] {
+  font-size: 15pt;
+  box-shadow: 0 0 3px #AF0505;
+  border: 2px solid #2B1A00;
+  padding: 4px 60px 4px 10px;
+  background-color: #FFF;
+  font-family: inherit;
+  font-weight: bold;
+  opacity: 0.8;
+  color: inherit;
+}
+
+input[type="text"]:focus,
+input[type="text"]:hover {
+  opacity: 1;
+}
+
+section.pusher > p {
+  float: left;
+}
+
+section.list {
+  padding: 10px 30px;
+  clear: left;
+}
+
+.lstWrap {
+  border: 3px solid white;
+  display: table;
+  margin: auto;
+  padding: 25px;
+  background: #795548;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #795548 0%, #8d6e63 49%, #8d6e63 51%, #795548 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #795548), color-stop(49%, #8d6e63), color-stop(51%, #8d6e63), color-stop(100%, #795548));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #795548 0%, #8d6e63 49%, #8d6e63 51%, #795548 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #795548 0%, #8d6e63 49%, #8d6e63 51%, #795548 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #795548 0%, #8d6e63 49%, #8d6e63 51%, #795548 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, #795548 0%, #8d6e63 49%, #8d6e63 51%, #795548 100%);
+}
+
+.elemRemove {
+  cursor: pointer;
+  display: inline-block;
+  left: 5px;
+  position: relative;
+  top: -5px;
+  opacity: 0.6;
+  visibility: visible;
+  font-size: 15px;
+}
+
+.elemRemove:hover {
+  opacity: 1;
+}
+
+.elemRemove i {
+  color: #AF0505;
+}
+
+.arrow {
+  cursor: pointer;
+  display: inline-block;
+  left: 5px;
+  position: relative;
+  top: -5px;
+  opacity: 0.6;
+  visibility: visible;
+  font-size: 15px;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+.checkbox i {
+  font-size: 24px;
+  cursor: pointer;
+  width: 24px;
+}
+
+.radius {
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.addButton {
+  position: relative;
+  top: 8px;
+  opacity: 0.6;
+  z-index: 100;
+  cursor: pointer;
+  width: 0px;
+}
+
+.addButton:hover {
+  opacity: 1;
+}
+
+.addButton:nth-child(2) {
+  left: -52px;
+}
+
+.addButton:nth-child(3) {
+  left: -28px;
+}
+
+.lineThrough {
+  position: relative;
+  top: -15px;
+  border-bottom: 2px solid #2B1A00;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  left: 0px;
+}
+
+.lineThrough.ng-hide {
+  left: -100%;
+  display: block !important;
+}
+
+.purchase-complete {
+  text-decoration: line-through;
+}
+
+li {
+  list-style: none;
+}

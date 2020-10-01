@@ -1,0 +1,25 @@
+<!-- Toolbar -->
+<div class="title">==== {{title}} ====</div>
+<div data-ng-app="boodschappenApp">
+  <div data-ng-controller="boodschappenCtrl" class="lstWrap radius">
+    <section class="pusher">
+      <p>
+        <label [for]="element.amount" ></label>
+        <input id="element.amount" type="text" class="radius" [(ngModel)]="element.amount" placeholder="0" />
+        <label [for]="element.name" ></label>
+        <input id="element.name" type="text" class="radius" [(ngModel)]="element.name" placeholder="Kopen..." />
+      </p>
+      <button (click)="addGrocery()">Add</button>
+    </section>
+    <ul>
+      <li *ngFor="let grocery of groceries | iets:'order'">
+        <button (click)="checkGrocery(grocery)">Check</button>
+        <span class="purchased" [ngClass]="{'purchase-complete': grocery.purchased}">{{grocery.amount}}x {{grocery.name}}</span>
+        <div class="elemRemove" (click)="delGrocery(grocery)"><i class="fa fa-times fa-2"></i></div>
+        <div class="arrow" (click)="orderUpGrocery(grocery)" ><i class="fa fa-arrow-up fa-2"></i></div>
+        <div class="arrow" (click)="orderDownGrocery(grocery)"><i class="fa fa-arrow-down fa-2"></i></div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="title">=======================</div>
